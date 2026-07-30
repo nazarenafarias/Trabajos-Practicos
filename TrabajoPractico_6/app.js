@@ -5,6 +5,7 @@ let cuatro = document.querySelector('#b4')
 let p = document.querySelector('p')
 let ct = document.querySelector('#ct')
 let r = document.querySelector('#r')
+let siete = document.querySelector('#b7')
 
 uno.onclick = function(){
     //cambiar el color de fondo
@@ -32,3 +33,4 @@ p.style.backgroundColor = 'rgb(171, 202, 230)'
 p.style.fontSize = '25px'
 p.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae, fugiat at perspiciatis incidunt suscipit eum similique sapiente id repellendus? Molestiae odio qui perferendis quos. Eveniet impedit voluptates officia voluptatum!'
 }
+siete.onclick = function(){}
