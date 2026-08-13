@@ -9,15 +9,30 @@ B1.onclick = function () {
         ejs1.textContent = ('sos menor de edad')
     }
 }
+
 //ACT 2
-let nombreUsuario = 'marta'
-let b2 = document.querySelector ("b2")
-let P2 = document.querySelector('P2')
-let P1 = document.querySelector('P1')
+
+let nombreUsuario = document.querySelector('input')
+let b2 = document.querySelector ("#B2")
+let P2 = document.querySelector('#p2')
+let P1 = document.querySelector('#P1')
 b2.onclick = function (){
-    if (nombreUsuario == 'marta') {
-        P2.textContent = "Bienvenido Nahuel"
+    if ((nombreUsuario.value == 'Nahuel') || (nombreUsuario.value == 'Marcos')){
+        P2.textContent =  "Bienvenido " + nombreUsuario.value + " ¿cómo estás?"
     } else {
-        ejs1.textContent = "bienvenido usuario"
-    }   
+        P2.textContent = "Bienvenido " + nombreUsuario.value + " ¿como estas?"
+    } 
 }
+//ACT 4
+b3.onclick = function () {
+ let numero = 0
+ if (numero < 0) {
+    P2.textContent =  "el numero es negativo" 
+ }else if(numero > 0){
+    P2.textContent = "el numero es positivo"
+ } else {
+    P2.textContent = "el numero 0"
+ }
+}
+//ATC 5
+
