@@ -59,6 +59,7 @@ b6.onclick = function () {
      P2.textContent = "no es un dia"
     }
 }
+//ACT 7
 let contrasenia = 'secreto'
 b7.onclick = function () {
  if (contrasenia == 'secreto') {
