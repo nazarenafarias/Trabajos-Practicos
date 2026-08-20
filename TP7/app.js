@@ -10,7 +10,7 @@ B1.onclick = function () {
     }
 }
 
-//ACT 2
+//ACT 2 y ACT 3
 
 let nombreUsuario = document.querySelector('input')
 let b2 = document.querySelector ("#B2")
@@ -35,4 +35,35 @@ b3.onclick = function () {
  }
 }
 //ATC 5
-
+b4.onclick = function () {
+ let edad = 18
+ if ((edad >= 6) || (edad <= 11 )){
+      P2.textContent = "sos un niño"
+ } else if ((edad >= 12) || (edad <= 18)){
+        P2.textContent = "sos un adolecente"
+ } else if ((edad >= 19) || (edad <= 26)) {
+        P2.textContent = "sos un joven"
+ } else if ((edad >= 27) || (edad <= 59)){
+        P2.textContent = "sos un adulto"
+ } else if (edad >= 60)
+        P2.textContent = "anciano"
+}
+//ACT 6
+b6.onclick = function () {
+    let dia = 'hola'
+    if ((dia == 'lunes') || (dia == 'martes') || (dia == 'miercoles') || (dia == 'jueves') || (dia == 'viernes')) {
+     P2.textContent = "es un dia laborable"
+    }else if ((dia == 'sabado') || (dia == 'domingo')){
+     P2.textContent = "es fin de semana"
+    }else{
+     P2.textContent = "no es un dia"
+    }
+}
+let contrasenia = 'secreto'
+b7.onclick = function () {
+ if (contrasenia == 'secreto') {
+   P2.textContent = "acceso concedido"
+ }else{
+     P2.textContent = "acceso denegado"
+ }
+ }
